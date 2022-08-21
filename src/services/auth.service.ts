@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://java-postgresql-backend-app.herokuapp.com/api/auth/";
+const API_URL = "https://java-postgresql-internet-store.herokuapp.com/api/auth/";
 
 export const register = (username: string, name: string, surname: string, phone: string, email: string, password: string) => {
   return axios.post(API_URL + "signup", {
