@@ -10,7 +10,7 @@ import {IColorModel} from "../../../components/AddNewColor/types";
 // import CustomSelect from "../../../common/CustomSelect";
 import {useFormik, FormikHelpers, Formik, Form, Field, FormikProps} from "formik";
 import ColorService from "../../../http-common"
-import ColorSelect from "../../../common/ColorSelect";
+//import ColorSelect from "../../../common/ColorSelect";
 
 const initialValues: IColorModel = {
     id: 0,
@@ -132,14 +132,14 @@ const ProductById = () => {
             {/*        )}*/}
             {/*</div>*/}
             <form className="col-4 m50auto" onSubmit={(e) => formik.handleSubmit(e)}>
-                <ColorSelect
-                    label="Колір"
-                    field="colorId"
-                    values={color}
-                    onChange={handleChange}
-                    touched={touched.id}
-                    error={errors.id}
-                />
+                {/*<ColorSelect*/}
+                {/*    label="Колір"*/}
+                {/*    field="colorId"*/}
+                {/*    values={color}*/}
+                {/*    onChange={handleChange}*/}
+                {/*    touched={touched.id}*/}
+                {/*    error={errors.id}*/}
+                {/*/>*/}
 
                 <div className="text-center mb200 mt50">
                     <button type="submit" className="btn btn-primary">

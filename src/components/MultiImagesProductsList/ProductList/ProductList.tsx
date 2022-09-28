@@ -36,7 +36,7 @@ const ProductList: React.FC = () => {
                     </tr>
                     </thead>
                     {<tbody>
-                    {products && products.map((item) => {
+                    {products && products.map((item:any) => {
                         return (
                             <tr key={item.id} className="border-r">
                                 {<th scope="row">{item.id}</th>}
